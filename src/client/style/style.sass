@@ -1,0 +1,140 @@
+$page-width: 50%
+$tilesize: 66px
+
+@font-face
+	font-family: 'Minecraft'
+	src: url('../assets/fonts/Minecraft.ttf')
+
+html, body
+	padding: 0
+	margin: 0
+	height: 100%
+	background-image: url("../assets/images/bgd.png")
+	background-size: $tilesize
+	image-rendering: pixelated;
+
+.middle-col
+	height: 100%
+	width: $page-width
+	margin: auto
+	font-size: 45px
+	position: relative
+	color: #fec1cb
+
+.mcbox
+	margin: auto
+	color: white
+	font-family: 'Minecraft'
+	border: solid 1px black
+	box-shadow: 0 0 10px 1px #000
+	background-image: url("../assets/images/bgl.png")
+	image-rendering: pixelated
+	background-size: $tilesize
+	margin-top: 10px
+	font-size: 20px
+
+.logo>img
+	display: block
+	image-rendering: auto
+	width: 100%
+	margin: auto
+
+
+.server-block
+	.title 
+		margin: 15px 0 15px 15px
+		background: transparent
+		font-size: 20px
+		float: left
+		display: block
+		color: white
+	.ip 
+		color: lightgray
+		width: 250px
+		margin: 15px 0 15px 15px
+		font-size: 17px
+		display: block
+		background: transparent
+	.status
+		margin: 17px 17px 0 15px
+		font-size: 20px
+		background: transparent
+		float: right
+
+.players
+	color: lightgray
+	padding: 12px
+	font-size: 15px
+	line-height: 20px
+	.title
+		color: white
+	.list
+		margin-top: 10px
+
+.music-block
+	min-height: 300px
+	border-top: none
+	.control-wrap
+		display: flex
+		flex-direction: row
+		justify-content: space-evenly
+		border-bottom: dotted 2px black
+		align-items: center
+		text-align: center
+		line-height: 30px
+		padding: 5px
+		.control
+			// margin: 0 25px
+			&.volume
+				height: 33px
+				cursor: pointer
+				flex: 1
+				position: relative
+				font-family: 'Minecraft'
+				background-color: rgb(43,43,43)
+				border: inset 2px lightgrey
+				border-right: none
+				color: grey
+				.pisya
+					height: 100%
+					width: 1px
+					background-color: red
+					position: absolute
+					top: 0
+					left: 0
+			&.button
+
+.song-name
+	height: 50px
+	width: 100%
+	color: lightgray
+	border-bottom: solid 1px black
+	font-size: 15px
+	line-height: 55px
+	text-align: center
+	cursor: pointer
+	&:hover
+		background-color: rgba(255,255,255,.05)
+.song-name.playing
+	background-color: rgba(255,255,255,.05)
+.song-name.paused
+	background-color: rgba(255,255,255,.1)
+
+.button
+	height: 37px
+	width: 50%
+	color: lightgray
+	font-size: 15px
+	font-family: 'Minecraft'
+	background-color: gray
+	cursor: pointer
+	&:focus
+		outline: none
+
+.credits
+	color: grey
+	font-size: 15px
+	font-family: 'Minecraft'
+	text-align: center
+	margin-top: 15px
+	line-height: 20px
